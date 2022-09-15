@@ -24,11 +24,6 @@ export default interface CameraInterface {
   get events(): TypedEmitter<CameraEvents>; // Where to listen for events
 
   /**
-   * @param config_file_loc location of configuration file, should include all settings if standalone, have address and password if server-camera
-   */
-  new(config_file_loc: string): void;
-
-  /**
    * SetCameraSettings() - Sets camera's capture settings
    * @param camera_settings camera's capture settings
    */
