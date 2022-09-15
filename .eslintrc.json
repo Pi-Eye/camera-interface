@@ -5,7 +5,6 @@
         "node": true
     },
     "extends": [
-        "eslint:recommended",
         "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
@@ -15,7 +14,7 @@
     "plugins": [
         "@typescript-eslint"
     ],
-	"ignorePatterns": [".built/*"],
+	"ignorePatterns": ["build/*"],
     "rules": {
         "indent": [
             "error",
@@ -29,10 +28,6 @@
         "quotes": [
             "error",
             "double"
-        ],
-        "semi": [
-            "error",
-            "always"
         ],
 		"@typescript-eslint/no-explicit-any": "off"
     }

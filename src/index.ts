@@ -13,7 +13,7 @@ export type CameraEvents = {
   // Once camera is ready, fire this event and send camera's configuration
   ready: (settings: AllSettings) => void;
   // When a frame is captured
-  frame: (frame: Buffer, timestamp: number) => void;
+  frame: (frame: Buffer, timestamp: number, motion: boolean) => void;
   // For errors
   error: (error: Error) => void;
   // For disconnections
@@ -21,7 +21,12 @@ export type CameraEvents = {
 };
 
 export default interface CameraInterface {
-  events: TypedEmitter<CameraEvents>; // Where to listen for events
+  get events(): TypedEmitter<CameraEvents>; // Where to listen for events
+
+  /**
+   * @param config_file_loc location of configuration file, should include all settings if standalone, have address and password if server-camera
+   */
+  new(config_file_loc: string): void;
 
   /**
    * SetCameraSettings() - Sets camera's capture settings
