@@ -24,23 +24,13 @@ export default interface CameraInterface {
   get events(): TypedEmitter<CameraEvents>; // Where to listen for events
 
   /**
-   * SetCameraSettings() - Sets camera's capture settings
+   * SetCombinedSettings() - Sets all camera related settings
    * @param camera_settings camera's capture settings
-   */
-  SetCameraSettings(camera_settings: StreamOptions & SPTypes.RequiredSettings): void;
-
-  /**
-   * SetTextSettings() - Sets text overlay settings
    * @param text_settings text overlay settigns (can be empty object to signify no text overlay)
-   */
-  SetTextSettings(text_settings: SPTypes.TextSettings): void;
-
-  /**
-   * SetMotionSettings() - Sets motion detection settings
    * @param motion_settings motion detection configuration (can be empty object to signify no motion detection)
    * @param device_settings device settings for running motion detection (should be an empty object is motion detection is also empty)
    */
-  SetMotionSettings(motion_settings: SPTypes.MotionSettings, device_settings: SPTypes.DeviceSettings): void;
+  SetCombinedSettings(settings: AllSettings): void;
 
   /**
    * GetCombinedSettings() - returns all camera related settings bundled together
