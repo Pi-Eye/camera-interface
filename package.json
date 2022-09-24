@@ -7,6 +7,7 @@
   "scripts": {
     "lint": "eslint .",
     "build": "tsc -b",
+    "preinstall": "npm install https://github.com/Pi-Eye/node-stream-processor-types",
     "postinstall": "npm run build"
   },
   "repository": {
