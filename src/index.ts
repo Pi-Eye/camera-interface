@@ -1,5 +1,5 @@
 import { StreamOptions } from "pi-camera-connect";
-import { SPTypes } from "node-stream-processor";
+import { SPTypes } from "node-stream-processor-types";
 import TypedEmitter from "typed-emitter";
 
 export type AllSettings = {
