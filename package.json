@@ -2,13 +2,11 @@
   "name": "camera-interface",
   "version": "1.0.0",
   "description": "Typescript interface for Pi-Eye camera",
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "lint": "eslint .",
-    "build": "tsc -b",
-    "preinstall": "npm install https://github.com/Pi-Eye/node-stream-processor-types",
-    "postinstall": "npm run build"
+    "build": "tsc -b"
   },
   "repository": {
     "type": "git",
