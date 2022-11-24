@@ -22,12 +22,12 @@
     "file-writer-types": "github:Pi-Eye/file-writer-types",
     "node-stream-processor-types": "github:Pi-Eye/node-stream-processor-types",
     "notification-handler": "github:Pi-Eye/notification-handler",
-    "pi-camera-connect": "^0.3.4",
-    "typed-emitter": "^2.1.0",
-    "typescript": "^4.8.4"
+    "pi-camera-connect": "^0.3.4"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "eslint": "^8.27.0"
+    "eslint": "^8.27.0",
+    "typed-emitter": "^2.1.0",
+    "typescript": "^4.8.4
   }
 }
