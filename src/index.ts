@@ -1,7 +1,7 @@
 import { StreamOptions } from "pi-camera-connect";
 import { SPTypes } from "node-stream-processor-types";
 import TypedEmitter from "typed-emitter";
-import { FileWriterConfig } from "file-writer";
+import { FileWriterConfig } from "file-writer-types";
 import { NotificationConfig, MotionTrigger } from "notification-handler";
 
 export type AllSettings = {

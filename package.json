@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Pi-Eye/camera-interface#readme",
   "dependencies": {
-    "file-writer": "github:Pi-Eye/file-writer",
+    "file-writer-types": "github:Pi-Eye/file-writer-types",
     "node-stream-processor-types": "github:Pi-Eye/node-stream-processor-types",
     "notification-handler": "github:Pi-Eye/notification-handler",
     "pi-camera-connect": "^0.3.4",
